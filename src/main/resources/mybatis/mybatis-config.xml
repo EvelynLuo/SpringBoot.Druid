@@ -34,10 +34,10 @@
 
     </environments>
 
-    <!-- 加载映射文件-->
+    <!-- 加载映射文件
     <mappers>
-       <mapper resource="luoe.demo.dao/EmailMapper.xml"/>
+        <mapper resource="luoe.demo.dao/EmailMapper.xml"/>
 
-    </mappers>
+    </mappers>-->
 
 </configuration>
