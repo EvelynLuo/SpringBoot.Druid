@@ -12,6 +12,7 @@
         <typeAlias alias="CHAR" type="java.lang.String"/>
         <typeAlias alias="HashMap" type="java.util.HashMap" />
         <typeAlias alias="email" type="luoe.demo.entity.Email"/>
+        <typeAlias alias="user" type="luoe.demo.entity.User"/>
         <!--<typeAlias alias="user" type="com.sse.demo.entity.User"/>-->
 
     </typeAliases>
