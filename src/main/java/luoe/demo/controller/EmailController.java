@@ -18,8 +18,8 @@ import java.util.List;
  * @Version 1.0
  * @Describe
  **/
-@Controller
-@RequestMapping("/Email")
+@RestController
+@RequestMapping("/email")
 public class EmailController {
     @Autowired
     private EmailService emailService;
@@ -38,16 +38,19 @@ public class EmailController {
 
     */
 
-    @ResponseBody
     @RequestMapping("/save")
     public int save(Email email){
         return emailService.save(email);
     }
 
-    @ResponseBody
     @RequestMapping("/queryAll")
-    public List<Email> queryALL(){
-        return  emailService.queryAll();
+    public String queryALL(){
+        StringBuffer s = new StringBuffer();
+        List<Email> list = emailService.queryAll();
+        for(Email e:list){
+            s.append(e.toString());
+        }
+        return s.toString() ;
     }
 
 

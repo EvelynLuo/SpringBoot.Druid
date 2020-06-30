@@ -46,4 +46,15 @@ public class Email  {
     public void setCreate_time(Date create_time) {
         this.create_time = create_time;
     }
+
+
+    @Override
+    public String toString() {
+        return "Email{" +
+                "id=" + id +
+                ", report_name='" + report_name + '\'' +
+                ", time='" + time + '\'' +
+                ", create_time=" + create_time +
+                '}';
+    }
 }

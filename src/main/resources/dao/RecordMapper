@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="luoe.demo.dao.RecordMapper">
+    <resultMap id="BaseResultMap" type="luoe.demo.entity.Record">
+        <result column="time" property="time" jdbcType="VARCHAR" />
+        <result column="score" property="score" jdbcType="INTEGER"/>
+        <result column="username" property="username" jdbcType="VARCHAR"/>
+        <result column="grade" property="grade" jdbcType="INTEGER"/>
+        <result column="id" property="id" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <select id="query" parameterType="INTEGER" resultMap="BaseResultMap">
+        select * from record WHERE id=#{id}
+    </select>
+
+</mapper>

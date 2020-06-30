@@ -8,11 +8,11 @@
     </resultMap>
 
     <select id="query" parameterType="VARCHAR" resultMap="BaseResultMap">
-        select * from user WHERE user.name=#{name}
+        select * from user WHERE name=#{name}
     </select>
 
     <select id="verify" parameterType="VARCHAR" resultMap="BaseResultMap">
-        select * from user WHERE user.phone=#{phone}
+        select * from user WHERE phone=#{phone}
     </select>
 
     <select id="queryAll" resultMap="BaseResultMap">

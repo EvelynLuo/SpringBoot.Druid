@@ -13,32 +13,11 @@
         <typeAlias alias="HashMap" type="java.util.HashMap" />
         <typeAlias alias="email" type="luoe.demo.entity.Email"/>
         <typeAlias alias="user" type="luoe.demo.entity.User"/>
+        <typeAlias alias="record" type="luoe.demo.entity.Record"/>
+
         <!--<typeAlias alias="user" type="com.sse.demo.entity.User"/>-->
 
     </typeAliases>
-    <!-- 设置一个默认的连接环境信息 -->
-    <environments default="development">
-        <!-- 连接环境信息，取一个任意唯一的名字 -->
-        <environment id="development">
-            <!-- mybatis使用jdbc事务管理方式 -->
-            <transactionManager type="JDBC"/>
-            <!-- mybatis使用连接池方式来获取连接 -->
-            <dataSource type="POOLED">
-                <!-- 配置与数据库交互的4个必要属性 -->
-                <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://49.234.104.13:3306/uat"/>
-                <property name="username" value="springboot"/>
-                <property name="password" value="123456"/>
-            </dataSource>
-        </environment>
 
-
-    </environments>
-
-    <!-- 加载映射文件
-    <mappers>
-        <mapper resource="luoe.demo.dao/EmailMapper.xml"/>
-
-    </mappers>-->
 
 </configuration>

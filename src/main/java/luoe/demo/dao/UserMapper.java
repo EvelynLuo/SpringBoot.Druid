@@ -9,6 +9,6 @@ import java.util.List;
 public interface UserMapper {
     List<User> query(String name);//昵称查询
     List<User> queryAll();
-    List<User> verify();//手机号验证
+    List<User> verify(String phone);//手机号验证
     int save(User user);
 }
